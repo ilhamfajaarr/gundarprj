@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan Laporan</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">    
+    <h1>Layanan Aspirasi Mahasiswa Gunadarma</h1>
+
+    <form id="complaintForm" action="submit_report.php" method="POST" enctype="multipart/form-data">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" required><br><br>
+    
+        <label for="class">NPM:</label>
+        <input type="text" id="class" name="class" required><br><br>
+    
+        <label for="complaint">Laporan:</label><br>
+        <textarea id="complaint" name="complaint" rows="4" cols="50" required></textarea><br><br>
+    
+        <label for="image">Select Image:</label>
+        <input type="file" id="image" name="image" accept="image/*" required><br><br>
+    
+        <input type="submit" value="Submit Laporan">
+        <div id="confirmation" style="display: none;">
+        </div>
+    </form>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
