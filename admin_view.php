@@ -27,7 +27,6 @@ $result = $conn->query($sql);
 </head>
 <body>
     <div class="admin-wrapper">
-        <!-- Pastikan judul ada di sini -->
         <h1>Data Laporan Mahasiswa</h1>
 
         <table class="admin-table">
@@ -84,6 +83,9 @@ $result = $conn->query($sql);
                 ?>
             </tbody>
         </table>
+        <form method="post" action="export_excel.php">
+            <button class="export-btn">Export ke Excel</button>
+        </form>
     </div>
 </body>
 </html>
