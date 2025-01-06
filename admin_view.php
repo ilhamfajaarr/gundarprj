@@ -27,7 +27,7 @@ $result = $conn->query($sql);
 </head>
 <body>
     <div class="admin-wrapper">
-        <h1>Data Laporan Mahasiswa</h1>
+        <h1>Data Aspirasi Mahasiswa Gunadarma</h1>
 
         <table class="admin-table">
             <thead>
